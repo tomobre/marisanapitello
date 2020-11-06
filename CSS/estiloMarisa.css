@@ -1,0 +1,643 @@
+/*********************Para todos/todos menos Home**************************/
+
+html,
+body {
+  height: 90%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+#navbar {
+  display: flex;
+  margin: 40px 500px -400px 70px;
+}
+
+.barraHome {
+  margin: 0 auto;
+  font-size: 2rem;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.barraHome:hover {
+  -webkit-transform: scale(1.2);
+}
+
+#MarisaNapiYContactoRest {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.MarisaNapiRest {
+  color: black;
+  font-size: 3rem;
+  margin-right: 1vw;
+  margin-top: 2vh;
+  transition: all 0.2s ease-out;
+}
+
+#navbarHome {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 190px 50px 200px;
+}
+
+#facebookRest {
+  height: 2rem;
+  width: 2rem;
+  filter: hue-rotate(0deg) saturate(40%) brightness(100%);
+  transition-property: filter;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+#instagramRest {
+  height: 2rem;
+  width: 2rem;
+  filter: hue-rotate(290deg) saturate(100%) brightness(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+#facebookRest:hover {
+  filter: hue-rotate(160deg) saturate(80%) brightness(160%);
+}
+
+#instagramRest:hover {
+  filter: hue-rotate(360deg) saturate(200%) brightness(120%);
+}
+
+/* Boton para mobile responsive*/
+
+.panel {
+  position: fixed;
+  z-index: 998;
+  width: 100%;
+  top: 5;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(255, 233, 199);
+  opacity: 90%;
+  transform: translate(0, +100%);
+  transition: transform 0.3s ease;
+}
+
+.panel.is-active {
+  transform: translate(0, 0);
+}
+
+.panel-btn {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  bottom: 4vh;
+  right: 4vw;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+}
+
+#NavBar {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+#NavBar a {
+  padding: 2rem;
+  width: inherit;
+  display: block;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--main-color);
+  transition: all 0.3s ease;
+}
+
+#NavBar a:hover {
+  font-weight: bold;
+  color: white;
+  background-color: orange;
+}
+
+/*********************Home**************************/
+#Fondo {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../HTML/imagenes/PRUEBA 2.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#video {
+  height: 450px;
+  width: 900px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+.subseccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 6);
+  margin: 2rem;
+}
+
+section div p {
+  font-size: 1rem;
+}
+
+.imagsHome {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  margin: 10px 10px 10px 10px;
+  box-shadow: 10px 5px 5px black;
+  transition: all 0.5s ease;
+  border-radius: 5%;
+}
+
+#MarisaNapiYContactoHome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.MarisaNapiHome {
+  color: white;
+  font-size: 3rem;
+  margin-right: 4vw;
+  margin-top: 120px;
+  border-radius: 20px;
+  transition: all 0.2s ease-out;
+}
+
+#facebookHome {
+  height: 2rem;
+  width: 2rem;
+  filter: hue-rotate(0deg) saturate(40%) brightness(100%);
+  transition-property: filter;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+#instagramHome {
+  height: 2rem;
+  width: 2rem;
+  filter: hue-rotate(290deg) saturate(100%) brightness(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+#facebookHome:hover {
+  filter: hue-rotate(160deg) saturate(80%) brightness(160%);
+}
+
+#instagramHome:hover {
+  filter: hue-rotate(360deg) saturate(200%) brightness(120%);
+}
+
+.change-color {
+  color: black;
+}
+
+section div a {
+  background-color: orange;
+  border-radius: 25px;
+  color: white;
+  padding: 0px 0;
+  width: 100%;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+  font-size: 0.7rem;
+}
+
+section div a:hover {
+  background-color: white;
+  color: orange;
+}
+
+#botSwipe {
+  color: white;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-self: flex-end;
+  width: 6rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+  margin-bottom: 20px;
+}
+#botSwipe:hover {
+  background-color: white;
+  color: orange;
+}
+
+/*********************Galeria**************************/
+
+.centradoGen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.centradoGenGaleria {
+  margin: 2% 20% 2% 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#divGaleria {
+  flex-wrap: wrap;
+}
+
+.imagsGaleria {
+  width: 100%;
+  height: auto;
+  margin: 20px 20px 20px 20px;
+  box-shadow: 10px 5px 5px black;
+  filter: opacity(50%);
+  transition: all 0.5s ease;
+  border-radius: 5%;
+  cursor: pointer;
+  max-width: 40%;
+  transition: all 0.3s ease-in;
+  transform: translate(0px, 0vh);
+}
+.imagsGaleria:hover {
+  filter: none;
+}
+
+.image-bigger {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 999;
+  filter: none;
+  max-width: 50%;
+  max-height: auto;
+  transform: translate(0px, -13vh);
+  transition: all 0.3s ease-in-out;
+}
+
+.image-bigger-dif-tall {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0px, -230px);
+  position: fixed;
+  z-index: 999;
+  filter: none;
+  max-width: auto;
+  max-height: auto;
+}
+
+.image-bigger-dif {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0px, -200px);
+  position: fixed;
+  z-index: 999;
+  filter: none;
+  max-width: auto;
+  max-height: auto;
+}
+
+.back-from-img {
+  display: flex;
+  position: fixed;
+  background: black;
+  z-index: 998;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 90%;
+}
+/*********************Trayectoria**************************/
+.titulosListaTrayectoria {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.listaTrayectoria {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 3rem;
+  width: calc(100% / 1.7);
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.imagsMiTrayectoriaMobile {
+  display: none;
+  font-size: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 3rem;
+  width: calc(100% / 1.7);
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.imagsMiTrayectoria {
+  display: flex;
+  margin: 4vw;
+  box-shadow: 10px 5px 5px black;
+  transition: all 0.5s ease;
+  border-radius: 5%;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+.linksMiTrayectoria {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+}
+
+.linksMiTrayectoria:hover {
+  background-color: orange;
+}
+
+/*********************Biografia**************************/
+#foto2Bio {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 10px 5px 5px black;
+  transition: all 0.5s ease;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+#container-fotoBio {
+  padding-right: 8vw;
+  padding-left: 8vw;
+  padding-bottom: 4vh;
+  padding-top: 4vh;
+}
+
+#textoBio {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 3rem;
+  width: calc(100% / 1.4);
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/*********************Media queries para celus a tablet*************************/
+
+@media (max-width: 768px) {
+  /*********************Para todos/todos menos home*************************/
+
+  #navbarHome {
+    display: none;
+  }
+  .centradoGen {
+    flex-direction: column;
+  }
+
+  #MarisaNapiYContactoRest {
+    position: absolute;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #MarisaNapiYContactoRest div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #facebookRest {
+    height: 30px;
+    width: 30px;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  #instagramRest {
+    height: 30px;
+    width: 30px;
+  }
+
+  .MarisaNapiRest {
+    justify-content: center;
+    font-size: 30px;
+    margin-right: auto;
+    margin-top: auto;
+    text-align: center;
+    margin: 2% 20% 2% 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /*********************Para Home*************************/
+  #Fondo {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    padding: 0;
+    margin-bottom: 1rem;
+    background-image: url("../HTML/imagenes/PRUEBA 2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+
+  #botSwipe {
+    display: none;
+  }
+
+  #MarisaNapiYContactoHome {
+    position: absolute;
+  }
+  .subseccion {
+    width: 325%;
+    justify-content: center;
+  }
+
+  section div a {
+    font-size: 2rem;
+  }
+
+  section div p {
+    font-size: 3rem;
+  }
+
+  .MarisaNapiHome {
+    font-size: 5rem;
+  }
+  /*********************Para Trayectoria************************/
+
+  .listaTrayectoria {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  td {
+    padding-bottom: 3vh;
+  }
+
+  /*********************Para Bio************************/
+
+  #textoBio {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  /*********************Para Galeria************************/
+
+  .imagsGaleria {
+    max-width: 50%;
+    transform: translate(0px, 0vh);
+  }
+  .image-bigger {
+    max-width: 80%;
+    max-height: auto;
+    transform: translate(0px, 10vh);
+  }
+  .image-bigger-dif-tall {
+    width: 100%;
+
+    transform: translate(-20px, 50px);
+
+    max-width: auto;
+    max-height: auto;
+  }
+
+  .image-bigger-dif {
+    width: 100%;
+
+    transform: translate(-20px, 50px);
+  }
+}
+
+/*********************Media query solo para compu**************************/
+
+@media (width: 1024px) {
+  #video {
+    height: 250px;
+    width: 500px;
+  }
+
+  html,
+  body {
+    height: 80%;
+  }
+}
+
+/*********************Media query solo para 4k**************************/
+
+@media (width: 2560px) {
+  .imagsGaleria {
+    max-width: 600px;
+  }
+
+  .MarisaNapiHome {
+    font-size: 5.5rem;
+  }
+
+  #instagramHome {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  #facebookHome {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .MarisaNapiRest {
+    font-size: 5.5rem;
+  }
+
+  #instagramRest {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  #facebookRest {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+}
+
+/*********************Media query solo para tablet**************************/
+
+@media (width: 768px) {
+  html,
+  body {
+    height: 130%;
+  }
+}
