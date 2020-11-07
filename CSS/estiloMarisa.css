@@ -2,7 +2,7 @@
 
 html,
 body {
-  height: 90%;
+  height: 100%;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -183,7 +183,7 @@ section div p {
   position: fixed;
   top: 0;
   left: 0;
-  margin-left: 5vw;
+  margin-left: 3vw;
   display: flex;
   flex-direction: column;
 }
@@ -248,10 +248,10 @@ section div a:hover {
   justify-content: center;
   margin: 0 auto;
   align-self: flex-end;
-  width: 6rem;
-  height: 2.5rem;
+  width: 5rem;
+  height: 2rem;
   border-radius: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
   outline: 0;
@@ -444,8 +444,12 @@ section div a:hover {
 
 /*********************Media queries para celus a tablet*************************/
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   /*********************Para todos/todos menos home*************************/
+  html,
+  body {
+    height: 55%;
+  }
 
   #navbarHome {
     display: none;
@@ -503,7 +507,7 @@ section div a:hover {
     height: 100%;
     max-height: 100%;
     padding: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1vh;
     background-image: url("../HTML/imagenes/PRUEBA 2.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -518,20 +522,37 @@ section div a:hover {
     position: absolute;
   }
   .subseccion {
-    width: 325%;
+    width: 95%;
     justify-content: center;
+    margin: 2vw;
   }
 
   section div a {
-    font-size: 2rem;
+    font-size: 0.7rem;
   }
 
   section div p {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 
   .MarisaNapiHome {
-    font-size: 5rem;
+    font-size: 1.5rem;
+    margin-right: 2vw;
+    margin-top: 3vh;
+  }
+
+  #instagramHome {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  #facebookHome {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  .imagsHome {
+    max-width: 150px;
   }
   /*********************Para Trayectoria************************/
 
@@ -588,7 +609,7 @@ section div a:hover {
 
   html,
   body {
-    height: 80%;
+    height: 90%;
   }
 }
 
@@ -601,6 +622,12 @@ section div a:hover {
 
   .MarisaNapiHome {
     font-size: 5.5rem;
+  }
+
+  #botSwipe {
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 2rem;
   }
 
   #instagramHome {
@@ -626,11 +653,6 @@ section div a:hover {
     height: 4rem;
     width: 4rem;
   }
-
-  html,
-  body {
-    height: 100%;
-  }
 }
 
 /*********************Media query solo para tablet**************************/
@@ -638,6 +660,309 @@ section div a:hover {
 @media (width: 768px) {
   html,
   body {
-    height: 130%;
+    height: 80%;
+  }
+
+  #instagramHome {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  #facebookHome {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  #navbarHome {
+    display: none;
+  }
+  .centradoGen {
+    flex-direction: column;
+  }
+
+  #MarisaNapiYContactoRest {
+    position: absolute;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #MarisaNapiYContactoRest div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #facebookRest {
+    height: 30px;
+    width: 30px;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  #instagramRest {
+    height: 30px;
+    width: 30px;
+  }
+
+  .MarisaNapiRest {
+    justify-content: center;
+    font-size: 30px;
+    margin-right: auto;
+    margin-top: auto;
+    text-align: center;
+    margin: 2% 20% 2% 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /*********************Para Home*************************/
+  #Fondo {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    padding: 0;
+    margin-bottom: 1vh;
+    background-image: url("../HTML/imagenes/PRUEBA 2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+
+  #botSwipe {
+    display: none;
+  }
+
+  #MarisaNapiYContactoHome {
+    position: absolute;
+  }
+  .subseccion {
+    width: 95%;
+    justify-content: center;
+    margin: 2vw;
+  }
+
+  section div a {
+    font-size: 0.7rem;
+  }
+
+  section div p {
+    font-size: 1rem;
+  }
+
+  .MarisaNapiHome {
+    font-size: 3rem;
+    margin-right: 2vw;
+    margin-top: 5vh;
+  }
+
+  .imagsHome {
+    max-width: 150px;
+  }
+  /*********************Para Trayectoria************************/
+
+  .listaTrayectoria {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  td {
+    padding-bottom: 3vh;
+  }
+
+  /*********************Para Bio************************/
+
+  #textoBio {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  /*********************Para Galeria************************/
+
+  .imagsGaleria {
+    max-width: 50%;
+    transform: translate(0px, 0vh);
+  }
+  .image-bigger {
+    max-width: 80%;
+    max-height: auto;
+    transform: translate(0px, 10vh);
+  }
+  .image-bigger-dif-tall {
+    width: 100%;
+
+    transform: translate(-20px, 50px);
+
+    max-width: auto;
+    max-height: auto;
+  }
+
+  .image-bigger-dif {
+    width: 100%;
+    transform: translate(-20px, 50px);
   }
 }
+
+/*********************Media query solo para landscape**************************/
+
+@media (min-width: 568px) and (max-width: 823px) and (min-height: 320px) and (max-height: 414px) {
+  html,
+  body {
+    height: 100%;
+  }
+
+  #navbarHome {
+    display: none;
+  }
+  .centradoGen {
+    flex-direction: column;
+  }
+
+  #MarisaNapiYContactoRest {
+    position: absolute;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #MarisaNapiYContactoRest div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #facebookRest {
+    height: 30px;
+    width: 30px;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  #instagramRest {
+    height: 30px;
+    width: 30px;
+  }
+
+  .MarisaNapiRest {
+    justify-content: center;
+    font-size: 30px;
+    margin-right: auto;
+    margin-top: auto;
+    text-align: center;
+    margin: 2% 20% 2% 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /*********************Para Home*************************/
+  #Fondo {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    padding: 0;
+    margin-bottom: 1vh;
+    background-image: url("../HTML/imagenes/PRUEBA 2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+
+  #botSwipe {
+    display: none;
+  }
+
+  #MarisaNapiYContactoHome {
+    position: absolute;
+  }
+  .subseccion {
+    width: 95%;
+    justify-content: center;
+    margin: 2vw;
+  }
+
+  section div a {
+    font-size: 0.7rem;
+  }
+
+  section div p {
+    font-size: 1rem;
+  }
+
+  .MarisaNapiHome {
+    font-size: 1.5rem;
+    margin-right: 2vw;
+    margin-top: 3vh;
+  }
+
+  #instagramHome {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  #facebookHome {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  .imagsHome {
+    max-width: 150px;
+  }
+  /*********************Para Trayectoria************************/
+
+  .listaTrayectoria {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  td {
+    padding-bottom: 3vh;
+  }
+
+  /*********************Para Bio************************/
+
+  #textoBio {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  /*********************Para Galeria************************/
+
+  .imagsGaleria {
+    max-width: 50%;
+    transform: translate(0px, 0vh);
+  }
+  .image-bigger {
+    max-width: 40%;
+    max-height: auto;
+    transform: translate(0px, -10vh);
+  }
+  .image-bigger-dif-tall {
+    width: 30%;
+
+    transform: translate(0px, -115px);
+
+    max-width: auto;
+    max-height: auto;
+  }
+
+  .image-bigger-dif {
+    width: 30%;
+
+    transform: translate(0px, -90px);
+  }
+}
+
