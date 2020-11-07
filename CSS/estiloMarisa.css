@@ -946,23 +946,23 @@ section div a:hover {
     transform: translate(0px, 0vh);
   }
   .image-bigger {
-    max-width: 40%;
+    max-width: 30%;
     max-height: auto;
-    transform: translate(0px, -10vh);
+    transform: translate(0px, -15vh);
   }
   .image-bigger-dif-tall {
-    width: 30%;
+    width: 25%;
 
-    transform: translate(0px, -115px);
+    transform: translate(0px, -125px);
 
     max-width: auto;
     max-height: auto;
   }
 
   .image-bigger-dif {
-    width: 30%;
+    width: 25%;
 
-    transform: translate(0px, -90px);
+    transform: translate(0px, -100px);
   }
 }
 
