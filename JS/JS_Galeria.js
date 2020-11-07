@@ -22,6 +22,10 @@ function Images(image, background) {
       $image.classList.toggle("image-bigger");
       $back.classList.toggle("back-from-img");
     }
+    if (e.target.matches(background)) {
+      $image.classList.remove("image-bigger");
+      $back.classList.remove("back-from-img");
+    }
   });
 }
 
@@ -34,6 +38,10 @@ function Images2(image, background) {
       $image.classList.toggle("image-bigger-dif-tall");
       $back.classList.toggle("back-from-img");
     }
+    if (e.target.matches(background)) {
+      $image.classList.remove("image-bigger-dif-tall");
+      $back.classList.remove("back-from-img");
+    }
   });
 }
 
@@ -45,6 +53,11 @@ function Images3(image, background) {
     if (e.target.matches(image)) {
       $image.classList.toggle("image-bigger-dif");
       $back.classList.toggle("back-from-img");
+    }
+
+    if (e.target.matches(background)) {
+      $image.classList.remove("image-bigger-dif");
+      $back.classList.remove("back-from-img");
     }
   });
 }
@@ -71,3 +84,4 @@ function ResponsiveMenu(id, mq) {
 }
 
 export { ResponsiveMenu, hamburgerMenu };
+
