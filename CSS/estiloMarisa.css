@@ -980,3 +980,13 @@ section div a:hover {
   }
 }
 
+/********************for iphone problem with image**************************/
+
+@media only screen and (width: 414px) and (height: 736px) {
+  .imagsGaleria {
+    max-width: 50%;
+    height: auto;
+    max-height: auto;
+  }
+}
+
